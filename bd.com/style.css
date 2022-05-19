@@ -82,7 +82,7 @@ body{
 		color: #A8A8B3;
 	}
 
-/* ------ Home ------- */	
+/* ------ Sign up ------- */	
 	#left_bar{
 		background-image: linear-gradient(to bottom right, #2A5C0B, #808F12);
 		width: 229px;
@@ -92,12 +92,15 @@ body{
 		width: fit-content;
 		margin: 20px auto;
 	}
-	#page_content>h2{
+	#page_top>a{
+		float: left;
+	}
+	#page_top>h2{
 		text-align: center;
-		margin-bottom: 40px;
+		margin-bottom: 60px;
 	}
 	.space{
-		width: 200px;
+		width: 20px;
 	}
 	.input_sign_up, .input_email{
 		width: 305px;
@@ -109,7 +112,7 @@ body{
 		padding-left: 15px;
 	}
 	.input_email{
-		width: 837px;
+		width: 657px;
 	}
 	#btn_submit{
 		width: fit-content;

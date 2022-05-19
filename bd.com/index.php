@@ -1,8 +1,7 @@
 <?php
-	include "header.php";
+	include_once "header.php";
 ?>
 
-<body>
 	<div id="home_page">
 		<div class="sign_up">
 			<div class="sign_up_img">

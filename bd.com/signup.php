@@ -1,26 +1,32 @@
-<!DOCTYPE html>
-<html>
-
 <?php
-	include "header.php";
+	include_once "header.php";
 ?>
 
-<body>
 	<div id="home_page">
 		<div id="left_bar"></div>
 		<div id="page_content">
-			<h2>Faça seu cadastro no Bon Appétit</h2>
-			<form id="sign_up_form" action="sign_up_success.php" method="POST">
+			<div id="page_top">
+				<a href="index.php"><img src="images/back_btn.png"></a>
+				<h2>Faça seu cadastro no Bon Appétit</h2>
+			</div>
+			<form id="sign_up_form" action="sign_up.php" method="POST">
 				<table id="sign_up_table">
 					<tr>
 						<td>Nome</td>
 						<td class="space"></td>
 						<td>Sobrenome</td>
+						<td style="padding-left: 20px;">Tipo de Conta</td>
 					</tr>
 					<tr>
 						<td><input class="input_sign_up" type="text" name="nome" placeholder="Insira seu nome"></td>
 						<td></td>
 						<td><input class="input_sign_up" type="text" name="sobrenome" placeholder="Insira seu sobrenome"></td>
+						<td>
+							<select class="input_sign_up" style="margin-left: 20px;">
+								<option>Cliente</option>
+								<option>Administrador</option>
+							</select>
+						</td>
 					</tr>
 					<tr>
 						<td colspan="3">Endereço de e-mail</td>
