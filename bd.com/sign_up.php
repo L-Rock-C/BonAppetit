@@ -9,6 +9,8 @@
 		$login = mysqli_escape_string($connect, $_POST['email']);
 		$password = mysqli_escape_string($connect, $_POST['password']);
 		$password_2 = mysqli_escape_string($connect, $_POST['password_2']);
+		$tipo = mysqli_escape_string($connect, $_POST['tipo_conta']);
+		echo $tipo;
 
 		if($nome =="" or $sobrenome == "" or $login == "" or $password == "" or $password_2 == ""){
 			$erros[] = "O Campo login/senha precisa ser preenchidos.";
@@ -31,7 +33,7 @@
 					if(mysqli_num_rows($result) > 0){
 						echo "Cadastro inválido: este email já está cadastrado.";
 					} else{
-						$insert = "INSERT INTO `usuarios`(`user_name`, `user_surname`, `user_email`, `user_pass_1`, `user_pass_2`) VALUES ('$nome','$sobrenome','$login','$password','$password_2')";
+						$insert = "INSERT INTO `usuarios`(`user_name`, `user_surname`, `user_email`, `user_pass_1`, `user_pass_2`, `user_type`) VALUES ('$nome','$sobrenome','$login','$password','$password_2', '$tipo')";
 						if(mysqli_query($connect, $insert)){
 							header('Location: index.php?sucesso');
 						} else{

@@ -3,10 +3,11 @@
 ?>
 
 	<div id="home_page">
-		<div id="left_bar"></div>
+		<div id="left_bar">
+			<input type="button" name="back_btn" id="back_btn" onclick="history.go(-1)">
+		</div>
 		<div id="page_content">
 			<div id="page_top">
-				<a href="index.php"><img src="images/back_btn.png"></a>
 				<h2>Faça seu cadastro no Bon Appétit</h2>
 			</div>
 			<form id="sign_up_form" action="sign_up.php" method="POST">
@@ -22,9 +23,9 @@
 						<td></td>
 						<td><input class="input_sign_up" type="text" name="sobrenome" placeholder="Insira seu sobrenome"></td>
 						<td>
-							<select class="input_sign_up" style="margin-left: 20px;">
-								<option>Cliente</option>
-								<option>Administrador</option>
+							<select class="input_sign_up" name="tipo_conta" style="margin-left: 20px;">
+								<option value="0">Administrador</option>
+								<option value="1" selected>Cliente</option>
 							</select>
 						</td>
 					</tr>

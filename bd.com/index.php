@@ -1,4 +1,8 @@
 <?php
+	ob_start();
+
+	session_start();
+
 	include_once "header.php";
 ?>
 
@@ -15,7 +19,7 @@
 			</div>
 		</div>
 		<div class="log_in">
-			<form id="log_in_form" action="home.php" method="POST">
+			<form id="log_in_form" action="control.php" method="POST">
 				<h3>Entre com seu<br>email e senha</h3>
 				<input type="email" name="email" placeholder="exemplo@email.com">
 				<input type="password" name="password" placeholder="********">

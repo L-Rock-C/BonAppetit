@@ -3,6 +3,45 @@ body{
 	padding: 0;
 	font-family: Poppings, sans-serif;
 }
+#back_btn{
+	width: 54px;
+	height: 54px;
+	background-color: transparent;
+	background-image: url("images/back_btn.png");
+	border: none;
+	position: relative;
+	top: 25px;
+	left: 25px;
+}
+#back_btn:hover{
+	background-image: url("images/back_btn_hoved.png");
+}
+nav#nav_menu{
+	margin-top: 200px;
+}
+ul#nav_menu{
+	list-style: none;
+	padding: 0;
+}
+ul#nav_menu>li{
+	height: 40px;
+	padding-right: 10px;
+	text-align: right;
+	transition: 0.3s;
+}
+ul#nav_menu>li:hover{
+	background-color: #b9c083;
+}
+.menu_item{
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+	position: relative;
+    top: 10px;
+}
+
+
 /* ------ Log in ------- */
 	#home_page{
 		display: flex;

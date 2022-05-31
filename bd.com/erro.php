@@ -1,7 +1,7 @@
 <?php
 
 	include_once "header.php";
-	
+	sleep(2);
 
 ?>
 	<div id="home_page">
